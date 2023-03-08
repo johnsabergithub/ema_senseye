@@ -10,8 +10,8 @@
 		021E04A229B1232500181EDC /* ema_senseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E04A129B1232500181EDC /* ema_senseyeApp.swift */; };
 		021E04A629B1232700181EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021E04A529B1232700181EDC /* Assets.xcassets */; };
 		021E04A929B1232700181EDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021E04A829B1232700181EDC /* Preview Assets.xcassets */; };
-		021E04B129B1244300181EDC /* senseye-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 021E04B029B1244300181EDC /* senseye-ios-sdk */; };
 		021E04B329B1249E00181EDC /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E04B229B1249E00181EDC /* EntryView.swift */; };
+		0265B3B129B7CB7700721D4E /* senseye-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 0265B3B029B7CB7700721D4E /* senseye-ios-sdk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +20,10 @@
 		021E04A529B1232700181EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021E04A829B1232700181EDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		021E04B229B1249E00181EDC /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		022B0D8C29B7C591004DA210 /* senseye-ios-sdk-public */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "senseye-ios-sdk-public"; path = "../../senseye-ios-sdk-public-clone/senseye-ios-sdk-public"; sourceTree = "<group>"; };
+		022B0D8D29B7C60C004DA210 /* senseye-ios-sdk-public */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "senseye-ios-sdk-public"; path = "../../senseye-ios-sdk-public-clone/senseye-ios-sdk-public"; sourceTree = "<group>"; };
+		022B0D8E29B7C7EA004DA210 /* senseye-ios-sdk-public */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "senseye-ios-sdk-public"; path = "../../senseye-ios-sdk-public-clone/senseye-ios-sdk-public"; sourceTree = "<group>"; };
+		0265B3B229B7D1F400721D4E /* ema-senseye-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ema-senseye-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021E04B129B1244300181EDC /* senseye-ios-sdk in Frameworks */,
+				0265B3B129B7CB7700721D4E /* senseye-ios-sdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +41,11 @@
 		021E049529B1232500181EDC = {
 			isa = PBXGroup;
 			children = (
+				022B0D8C29B7C591004DA210 /* senseye-ios-sdk-public */,
+				02BEF80229B7C4680080B8B1 /* Packages */,
 				021E04A029B1232500181EDC /* ema_senseye */,
 				021E049F29B1232500181EDC /* Products */,
+				0265B3AF29B7CB7700721D4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,7 @@
 		021E04A029B1232500181EDC /* ema_senseye */ = {
 			isa = PBXGroup;
 			children = (
+				0265B3B229B7D1F400721D4E /* ema-senseye-Info.plist */,
 				021E04A129B1232500181EDC /* ema_senseyeApp.swift */,
 				021E04A529B1232700181EDC /* Assets.xcassets */,
 				021E04A729B1232700181EDC /* Preview Content */,
@@ -67,6 +75,22 @@
 				021E04A829B1232700181EDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0265B3AF29B7CB7700721D4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02BEF80229B7C4680080B8B1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				022B0D8D29B7C60C004DA210 /* senseye-ios-sdk-public */,
+				022B0D8E29B7C7EA004DA210 /* senseye-ios-sdk-public */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +110,7 @@
 			);
 			name = ema_senseye;
 			packageProductDependencies = (
-				021E04B029B1244300181EDC /* senseye-ios-sdk */,
+				0265B3B029B7CB7700721D4E /* senseye-ios-sdk */,
 			);
 			productName = ema_senseye;
 			productReference = 021E049E29B1232500181EDC /* ema_senseye.app */;
@@ -117,7 +141,6 @@
 			);
 			mainGroup = 021E049529B1232500181EDC;
 			packageReferences = (
-				021E04AF29B1244300181EDC /* XCRemoteSwiftPackageReference "senseye-ios-sdk-public" */,
 			);
 			productRefGroup = 021E049F29B1232500181EDC /* Products */;
 			projectDirPath = "";
@@ -278,6 +301,7 @@
 				DEVELOPMENT_TEAM = WD56W2V868;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ema-senseye-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "EMA Senseye";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is required for networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to track the eyese";
@@ -310,6 +334,7 @@
 				DEVELOPMENT_TEAM = WD56W2V868;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ema-senseye-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "EMA Senseye";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is required for networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to track the eyese";
@@ -354,21 +379,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		021E04AF29B1244300181EDC /* XCRemoteSwiftPackageReference "senseye-ios-sdk-public" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/senseye-inc/senseye-ios-sdk-public";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		021E04B029B1244300181EDC /* senseye-ios-sdk */ = {
+		0265B3B029B7CB7700721D4E /* senseye-ios-sdk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 021E04AF29B1244300181EDC /* XCRemoteSwiftPackageReference "senseye-ios-sdk-public" */;
 			productName = "senseye-ios-sdk";
 		};
 /* End XCSwiftPackageProductDependency section */
