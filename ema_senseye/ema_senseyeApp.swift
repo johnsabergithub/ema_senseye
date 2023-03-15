@@ -19,7 +19,9 @@ struct ema_senseyeApp: App {
                 LoadingView().tag(0)
                 
                 let initializedSdkObject = SenseyeSDK(userId: self.currentPatientId, taskIds: [.firstCalibration], shouldCollectSurveyInfo: false, requiresAuth: false, databaseLocation: "ema_wellness", shouldUseFirebaseLogging: false)
-                EntryView(senseyeSDK: initializedSdkObject).tag(1)
+                EntryView(senseyeSDK: initializedSdkObject).tag(1).onAppear {
+                    UIApplication.shared.isIdleTimerDisabled = true
+                }
             }).onOpenURL { url in
                 let patientId = URLComponents(url: url, resolvingAgainstBaseURL: true)?.host ?? "blank"
                 currentPatientId = patientId
