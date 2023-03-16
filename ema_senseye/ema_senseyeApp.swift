@@ -16,9 +16,9 @@ struct ema_senseyeApp: App {
     var body: some Scene {
         WindowGroup {
             TabView(selection: $activeTab, content: {
-                LoadingView().tag(0)
+                //LoadingView().tag(0)
                 
-                let initializedSdkObject = SenseyeSDK(userId: self.currentPatientId, taskIds: [.firstCalibration], shouldCollectSurveyInfo: false, requiresAuth: false, databaseLocation: "ema_wellness", shouldUseFirebaseLogging: false)
+                let initializedSdkObject = SenseyeSDK(userId: self.currentPatientId, taskIds: [.firstCalibration], databaseLocation: "ema_wellness")
                 EntryView(senseyeSDK: initializedSdkObject).tag(1).onAppear {
                     UIApplication.shared.isIdleTimerDisabled = true
                 }

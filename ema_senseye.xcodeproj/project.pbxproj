@@ -24,6 +24,11 @@
 		022B0D8D29B7C60C004DA210 /* senseye-ios-sdk-public */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "senseye-ios-sdk-public"; path = "../../senseye-ios-sdk-public-clone/senseye-ios-sdk-public"; sourceTree = "<group>"; };
 		022B0D8E29B7C7EA004DA210 /* senseye-ios-sdk-public */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "senseye-ios-sdk-public"; path = "../../senseye-ios-sdk-public-clone/senseye-ios-sdk-public"; sourceTree = "<group>"; };
 		0265B3B229B7D1F400721D4E /* ema-senseye-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ema-senseye-Info.plist"; sourceTree = SOURCE_ROOT; };
+		027DF00F29C3B04B00161515 /* ema_senseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ema_senseyeApp.swift; sourceTree = "<group>"; };
+		027DF01029C3B04B00161515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		027DF01229C3B04B00161515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		027DF01329C3B04B00161515 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		02D1484629C3B3A100B6A6A2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = "Preview Content/LoadingView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 		021E049529B1232500181EDC = {
 			isa = PBXGroup;
 			children = (
+				027DF00E29C3B04B00161515 /* ema_senseye */,
 				022B0D8C29B7C591004DA210 /* senseye-ios-sdk-public */,
 				02BEF80229B7C4680080B8B1 /* Packages */,
 				021E04A029B1232500181EDC /* ema_senseye */,
@@ -82,6 +88,26 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		027DF00E29C3B04B00161515 /* ema_senseye */ = {
+			isa = PBXGroup;
+			children = (
+				027DF00F29C3B04B00161515 /* ema_senseyeApp.swift */,
+				027DF01029C3B04B00161515 /* Assets.xcassets */,
+				027DF01129C3B04B00161515 /* Preview Content */,
+				027DF01329C3B04B00161515 /* EntryView.swift */,
+				02D1484629C3B3A100B6A6A2 /* LoadingView.swift */,
+			);
+			path = ema_senseye;
+			sourceTree = "<group>";
+		};
+		027DF01129C3B04B00161515 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				027DF01229C3B04B00161515 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		02BEF80229B7C4680080B8B1 /* Packages */ = {
