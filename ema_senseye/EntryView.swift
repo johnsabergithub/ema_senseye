@@ -24,6 +24,7 @@ struct EntryView: View {
     //            //Text("Came from \(link2)")//
     var senseyeSDK: SenseyeSDK
      init(senseyeSDK: SenseyeSDK) {
+     
          self.senseyeSDK = senseyeSDK
      }
 

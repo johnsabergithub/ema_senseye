@@ -12,6 +12,7 @@
 		021E04A929B1232700181EDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021E04A829B1232700181EDC /* Preview Assets.xcassets */; };
 		021E04B329B1249E00181EDC /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E04B229B1249E00181EDC /* EntryView.swift */; };
 		0265B3B129B7CB7700721D4E /* senseye-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 0265B3B029B7CB7700721D4E /* senseye-ios-sdk */; };
+		02D1484829C3D54700B6A6A2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1484729C3D54700B6A6A2 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,7 @@
 		027DF01029C3B04B00161515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027DF01229C3B04B00161515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		027DF01329C3B04B00161515 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
-		02D1484629C3B3A100B6A6A2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = "Preview Content/LoadingView.swift"; sourceTree = "<group>"; };
+		02D1484729C3D54700B6A6A2 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +94,11 @@
 		027DF00E29C3B04B00161515 /* ema_senseye */ = {
 			isa = PBXGroup;
 			children = (
+				02D1484729C3D54700B6A6A2 /* LoadingView.swift */,
 				027DF00F29C3B04B00161515 /* ema_senseyeApp.swift */,
 				027DF01029C3B04B00161515 /* Assets.xcassets */,
 				027DF01129C3B04B00161515 /* Preview Content */,
 				027DF01329C3B04B00161515 /* EntryView.swift */,
-				02D1484629C3B3A100B6A6A2 /* LoadingView.swift */,
 			);
 			path = ema_senseye;
 			sourceTree = "<group>";
@@ -196,6 +197,7 @@
 			files = (
 				021E04A229B1232500181EDC /* ema_senseyeApp.swift in Sources */,
 				021E04B329B1249E00181EDC /* EntryView.swift in Sources */,
+				02D1484829C3D54700B6A6A2 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ema_senseye/Preview Content\"";
@@ -354,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ema_senseye/Preview Content\"";
