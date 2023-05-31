@@ -11,25 +11,15 @@ import SwiftUI
 import senseye_ios_sdk
 
 struct EntryView: View {
-    //     @Binding var cameFromUrl:URL
-    //    @Binding var urlLoaded:Bool
     
-    //    var body: some View {
-    //        if self.urlLoaded
-    //        {
-    //            var link = cameFromUrl.absoluteString
-    //            let PatientId = link.replacingOccurrences(of: "emasenseye://", with: "")
-    //            var senseyeSDK = SenseyeSDK(userId: PatientId, taskIds: [.firstCalibration], databaseLocation: "ema_wellness")
-    //            senseyeSDK.senseyeTabView()
-    //            //Text("Came from \(link2)")//
-    var senseyeSDK: SenseyeSDK
-     init(senseyeSDK: SenseyeSDK) {
-     
-         self.senseyeSDK = senseyeSDK
-     }
+    @EnvironmentObject var viewModel: SessionViewModel
 
-     var body: some View {
-         senseyeSDK.senseyeTabView()
-     }
+    var body: some View {
+        if (viewModel.currentPatientId != "blank") {
+            SenseyeSDK(userId: viewModel.currentPatientId, taskIds: [.firstCalibration], shouldCollectSurveyInfo: false, requiresAuth: false, databaseLocation: "ema_wellness", shouldUseFirebaseLogging: false).senseyeTabView()
+        } else {
+            Text("Need a valid patient ID...\(viewModel.currentPatientId)")
+        }
+    }
     
 }
